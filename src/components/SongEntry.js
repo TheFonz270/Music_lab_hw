@@ -4,7 +4,7 @@ import React from "react"
 const SongEntry = ({top20}) => {
     if (!top20.length) return "loading"
     
-    const songNodes = top20.map((song, index) => <Song title={song['im:name'].label} />)
+    const songNodes = top20.map((song, index) => <Song title={song['im:name'].label} artist={song['im:artist'].label} />)
         
         console.log(songNodes)
         console.log(songNodes[0].props.title)
